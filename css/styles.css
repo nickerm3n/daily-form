@@ -1,0 +1,157 @@
+:root {
+	--red: #ea355a;
+	--grey: #7a7b7f;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; font-size: 14px;
+	display: flex;
+	justify-content: center;
+	background: green;	
+	background: #ff512f; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #ff512f 1%, #ee3a53 49%, #e0286f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #ff512f 1%,#ee3a53 49%,#e0286f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #ff512f 1%,#ee3a53 49%,#e0286f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff512f', endColorstr='#e0286f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.container {
+	background: #fff;
+	max-width: 511px;
+	height: 100%;	
+	padding: 0 20px;
+	border-radius: 8px;
+	margin-top: 60px;
+}
+
+.login {
+	padding: 30px;
+}
+
+.community__description {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 20px;
+	text-indent: 35px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.community__description::before {
+	content: '';
+	background: url('../images/sign_up_icon.png');
+	width: 24px;
+	height: 25px;
+	position: absolute;
+	left: 0;
+	top: -5px;
+}
+
+.community__description--small {
+	font: 13px/20px;
+	color: #7a7b7f;
+	font-weight: 400;
+	line-height: 1.5;
+	padding-bottom: 35px;
+}
+
+.community__link {
+	color: var(--red);
+	text-decoration: none;
+}
+
+.field {
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2px;
+}
+
+
+
+.field__item--half::placeholder {
+	background: #f0f0f0;
+	color: var(--grey);
+}
+
+.field__item {
+	width: 100%;
+	border-radius: 5px;
+	background: #f0f0f0;
+	color: var(--grey);
+	padding: 15px;
+}
+
+.field__item--half {
+	width: 195px;
+}
+
+.field__item:focus {
+	border:1px solid var(--red);
+	transform: translateY(-10px);
+	transform: translateX(-10px);
+}
+.button-wrapper {
+	padding-top: 1px;
+	padding-bottom: 25px;
+}
+
+.sign-button {
+	display: inline-block;
+	border-radius: 5px;
+	width: 100%;
+	padding: 20px 0px;
+	cursor: pointer;
+	background: var(--red);
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 700;
+	line-height: 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	box-shadow: 0 3px 0px 1px rgb(189, 25, 98, 1);
+	transition: all .0s ease-in-out;
+	border: 4px solid transparent;
+	position: relative;
+
+}
+
+.sign-button:active {
+	transform: translateY(5px);
+	box-shadow: 0 1px 0px 1px rgb(189, 25, 98, .8);
+}
